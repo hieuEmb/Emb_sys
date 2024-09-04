@@ -1,0 +1,32 @@
+Linux file system
+
+Top-level Directory:
+
+'/': root
+
+/bin: Contains executable binary, commands used by all the users of the system are located here
+
+/sbin: contains executable binary files used typically by system administrator, for system maintenance purpose.
+
+/etc: contains configuration files required by all programs, startup and shutdown shell scripts
+
+/dev: contains device files
+	 E.g. /dev/tty1, /dev/usbmon0
+	 
+/proc: contains information about running system process
+
+/home: store user personal files
+
+/boot: contains boot loader related files
+
+/usr: contains binaries, libraries, documentation, and source code for second level programs.
+
+/opt: contains add-on applications from user, individual vendors
+
+(Refer to this link for more information http://www.thegeekstuff.com/2010/09/linux-file-system structure/?utm_source=tuicool)
+
+
+
+
+
+

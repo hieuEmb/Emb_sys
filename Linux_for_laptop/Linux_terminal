@@ -1,0 +1,16 @@
+1. The command line is an interesting beast
+
+2. Most of time you communicate with the embedded board via Terminal
+
+3. Terminal use BASH language
+
+4. Linux ignores the extension and looks inside the file to determine what type of file it is.
+ 
+5. Linux is Case Sensitive
+	e.g. file1.TXT ≠ file1.txt
+	
+6. Careful with space in file names
+ 
+7. The Linux command line does not have an undo feature.
+ 
+8. Perform destructive actions carefuly.

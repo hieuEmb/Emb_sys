@@ -1,0 +1,42 @@
+	
+1:	Tuong tac, nhanh:
+	git init-> khoi tao git cho thu muc woking 
+	git status-> kiem tra xem minh dang tren nhanh nao
+	git branch <tên-nhánh-mới>-> tao nhanh moi
+	git branch -M main-> doi ten nhanh
+	git checkout <tên-nhánh-mới>-> chuyen sang nhanh moi
+
+2: 	Tuong tac voi cac remote
+	git remote add <tên_remote_dai_dien_local> <URL-remote-repository>-> ket noi remote
+	git remote -v-> Liet ke cac remote +URL da ket noi
+	git remote rm <ten_remote>-> Xoa remote 
+	
+3.	Tuong day len remote rep
+	git add .
+	git commit -m "Thong diep commit"
+	git push <tên-remote_dai_dien_local> <tên-nhánh>
+	
+4.	Sap nhap nhanh
+	git checkout <ten_nhanh_chinh>-> chuyen nhanh chinh
+	git merge <ten-nhanh_can_merge>
+	
+
+
+
+	
+	
+	
+	
+
+
+	
+	
+
+
+
+	
+	
+	
+		 
+	
+			

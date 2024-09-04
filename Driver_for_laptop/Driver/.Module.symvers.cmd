@@ -1,0 +1,1 @@
+savedcmd_/home/hieu/Embedded_System/library/tai_lieu/driver/driver/Module.symvers :=  scripts/mod/modpost -m -a      -o /home/hieu/Embedded_System/library/tai_lieu/driver/driver/Module.symvers -T /home/hieu/Embedded_System/library/tai_lieu/driver/driver/modules.order -i Module.symvers -e 

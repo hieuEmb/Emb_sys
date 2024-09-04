@@ -1,0 +1,25 @@
+-thu vien, chi chua ham, khai bao, viet mot lan, dung nhieu lan.
+-thu vien c, la thu vien duoc viet bang ngon ngu c: Thu vien dong, thu vien tinh.
+
+Thư viện Động (Dynamic Library):
+Tính linh hoạt:
+Thư viện động được tạo ra dưới dạng các tập tin có phần mở rộng thường là .dll (trên Windows) hoặc .so (trên Unix/Linux).
+Chúng không được biên dịch vào chương trình cuối cùng mà thay vào đó, chương trình chỉ tham chiếu đến chúng khi chương trình chạy.
+Điều này cho phép nhiều chương trình sử dụng cùng một thư viện động, giúp tiết kiệm tài nguyên và không gian lưu trữ.
+Quản lý Tài nguyên:
+Thư viện động được tải vào bộ nhớ khi chương trình chạy và được giải phóng khi chương trình kết thúc.
+Điều này giúp giảm bộ nhớ được sử dụng khi nhiều chương trình sử dụng cùng một thư viện.
+Cập nhật dễ dàng:
+Khi một thư viện động được cập nhật, các chương trình sử dụng nó không cần phải được biên dịch lại.
+Điều này giúp giảm thời gian và công sức cần thiết cho việc cập nhật và bảo trì phần mềm.
+
+
+Thư viện Tĩnh (Static Library):
+Tính độc lập:
+Thư viện tĩnh được biên dịch trực tiếp vào chương trình cuối cùng trong quá trình biên dịch.
+Mã nguồn của thư viện được sao chép vào chương trình, do đó chương trình có thể hoạt động độc lập mà không cần phụ thuộc vào các thư viện ngoài khi chạy.
+Hiệu suất:
+Vì mã nguồn của thư viện được biên dịch vào chương trình, nên không có chi phí nào cho việc tải hoặc giải phóng thư viện khi chương trình chạy.
+Điều này có thể cải thiện hiệu suất của chương trình, đặc biệt là trong các hệ thống nhúng hoặc có yêu cầu hiệu suất cao.
+Dung lượng:
+Tuy nhiên, việc sử dụng thư viện tĩnh có thể làm tăng dung lượng của chương trình cuối cùng, đặc biệt khi sử dụng nhiều thư viện và chức năng.

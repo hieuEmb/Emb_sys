@@ -1,0 +1,73 @@
+//kiem tra phien ban cua file header ->uname-r
+//neu khong co cai header cho rasberry -> sudo apt insall rasberryi-kerner-header(tim kiem thu muc build)
+
+p1-> driver cua interrup
+
+
+
+
+// kiem tra xem bus dia chi i2c co trong khong-> i2cdetect –y 1
+// Neu khong co trong thi do driver co san ra-> sudo rmmod inv_mpu6050_i2c->sudo rmmod inv_mpu6050.
+B1: dang ky driver tu viet trong file boot cua rasberry
+// dia chi rasberry-> 192.168.43.288
+// de chinh sua-> sudo geany
+// truc khi covert thi-> cd /boot
+convert from dtb to dts:
+ 	cd/boot
+ 	sudo dtc -I dtb -O dts -o bcm2710-rpi-3-b-plus.dts bcm2710-rpi-3-b-plus.dtb
+ convert from dts to dtb
+ 	sudo dtc -I dts -O dtb -o bcm2710-rpi-3-b-plus.dtb bcm2710-rpi-3-b-plus.dts
+
+mpu6050@68 {
+						compatible = "invensense,mpu6050";
+						reg =<0x68>;// dia chi i2c cua IC
+						// other properties
+						};
+
+tcs34725@29 {
+        compatible = "ams,tcs34725";
+        reg = <0x29>; // Địa chỉ I2C của TCS34725
+        // Các thuộc tính khác của TCS34725
+    };
+    
+    
+sau khi xong thi ->sudo reboot
+// Neu duoc thi go-> dtoverlay=bcm2710-rpi-3-b-plus						
+B2: // truoc khi cai driver-> cd tct34725_driver
+doi ten file muon bien dich driver trong file Make
+B3: make-> tao file ko
+B4: cai dat driver sudo insmod tcs34725_ioctl.ko
+B5: go driver sudo rmmod mpu6050_ioctl, xoa file ko-> make clean
+
+// kiem tra xem  driver da cai chua-> lsmod
+// kiem tra tin nhan o vung kenel -> dmesg -w
+// I2C
+SDA: pin 3
+5A : pin 4
+3A : pin 1
+SCL: pin 5
+GND: pin 6
+
+//bien dich-> gcc -o demo_mpu demo_mpu.c -li2c
+// lui lai-> cd ..
+
+// Chuc nang thanh ghi
+// 1: thanh ghi lenh, moi dia chi se phai duoc tuong tac thong qua thanh ghi lenh
+// 2: 
+// 3:0x01 thoi gian nhin anh sang
+// 4: 0x03 thoi gian giua cac lan do
+// 5: 0x04-> 0x07 thiet lap gia tri anh sang, de du ngat
+// 6: 0x06 giam thieu ngat gia 
+// 7: 0x0D cau hinh cai dat co ban, tuan thu gia tri nang luong va gia tri do
+// 8: 0xF0 che do mac dinh
+// 9: 0x12 dam bao cam bien dang hoat dong
+// 10: 0x13 kiem tra trang thai cam bien, co san sang hoat dong hay khong
+// 11: 0x14-> 0x1B
+
+dmesg -w
+
+sudo insmod tcs34725_ioctl.ko
+sudo rmmod tcs34725_ioctl
+
+gcc -o test_tcs34725 test_tcs34725.c -li2c
+sudo ./test_tcs34725

@@ -1,0 +1,42 @@
+1. Tao ma nguon va luu filename.c
+2.Compile the Program:(tao file chuong trinh thuc thi ten la hello) 
+	gcc -o hello hello.c
+3.Run the Program:
+	./hello(chay chuong trinh thuc thi)
+	
+	
+	
+4. Co 3 pp de tao Compile
+Phương pháp 1: Sử dụng lệnh gcc trực tiếp:
+	gcc -o hello hello.c
+Lệnh này biên dịch tệp nguồn "hello.c" và tạo một chương trình thực thi có tên là "hello". Phương pháp này thích hợp khi bạn chỉ có một tệp nguồn đơn giản.
+
+
+
+Phương pháp 2: Tạo và chạy Makefile:
+Bạn có thể tạo một tệp văn bản với tên "Makefile". Mở trình soạn thảo và nhập nội dung sau:
+	Hello: hello.c
+		gcc -o hello hello.c
+Lưu và thoát trình soạn thảo. Sau đó, bạn có thể sử dụng lệnh make để biên dịch chương trình:
+make
+Điều này sẽ tự động biên dịch chương trình "hello" từ tệp nguồn "hello.c".
+
+
+
+Phương pháp 3: Sử dụng CMake:
+Bạn cần tạo một tệp CMakeLists.txt với nội dung sau:
+
+cmake_minimum_required(VERSION 3.10)
+project(HelloWorld)
+set(SOURCE_FILES hello.c)
+add_executable(hello ${SOURCE_FILES})
+
+Mở Terminal và chạy các lệnh sau:
+mkdir build
+cd build
+cmake ..
+make
+
+Điều này sẽ tạo thư mục "build", chuyển vào đó, sử dụng CMake để tạo Makefile và sau đó sử dụng make để biên dịch chương trình.
+Mỗi phương pháp có những ưu điểm và ứng dụng riêng. Phương pháp 1 phù hợp cho các chương trình đơn giản, phương pháp 2 làm cho việc xây dựng các chương trình có nhiều modules/source files dễ dàng hơn, và phương pháp 3 sử dụng CMake làm cho việc quản lý dự án lớn trở nên thuận tiện hơn.	
+

@@ -1,0 +1,135 @@
+/Lenh tuong tac dia chi/
+1.pwd – In lệnh Working Directory:
+Mô tả: Lệnh này được sử dụng để in ra thư mục làm việc hiện tại (Working Directory).
+Ví dụ:user@bash: pwd
+/home/haduc
+Giải thích: Đây là một ví dụ khi bạn sử dụng lệnh pwd để in ra đường dẫn của thư mục làm việc hiện tại, ở đây là /home/haduc.
+
+
+2.ls – Liệt kê tất cả các thư mục và tệp trong thư mục làm việc:
+Mô tả: Lệnh này được sử dụng để liệt kê tất cả các thư mục và tệp trong thư mục làm việc hiện tại.
+Ví dụ:user@bash: ls
+bin Documents public_html
+Giải thích: Đây là một ví dụ khi bạn sử dụng lệnh ls để liệt kê các thư mục và tệp trong thư mục làm việc hiện tại, với kết quả là các thư mục bin, Documents, và public_html.
+
+
+3.ls -l /etc – Liệt kê chi tiết các thư mục và tệp trong /etc:
+Mô tả: Lệnh này được sử dụng để liệt kê chi tiết các thư mục và tệp trong thư mục /etc.
+Ví dụ:
+user@bash: ls -l /etc
+Giải thích: Đây là một ví dụ khi bạn sử dụng lệnh ls -l /etc để liệt kê chi tiết các thư mục và tệp trong thư mục /etc.
+
+
+
+4.cd [địa điểm] – Di chuyển đến [thư mục đích]:
+Mô tả: Lệnh này được sử dụng để di chuyển đến một thư mục cụ thể.
+Ví dụ:
+user@bash: cd /usr/local/bin
+Giải thích: Đây là một ví dụ khi bạn sử dụng lệnh cd /usr/local/bin để di chuyển đến thư mục /usr/local/bin.
+
+
+5.cd ../games – Di chuyển đến thư mục cha sau đó đến thư mục "games":
+Mô tả: Lệnh này được sử dụng để di chuyển đến thư mục cha sau đó đến thư mục "games" từ thư mục làm việc hiện tại.
+Ví dụ:user@bash: cd ../games
+Giải thích: Đây là một ví dụ khi bạn sử dụng lệnh cd ../games để di chuyển đến thư mục cha của thư mục hiện tại, sau đó di chuyển đến thư mục "games".
+
+
+
+/Lenh tuong tac chuc nang/
+6.man <command> - Tra cứu trang hướng dẫn cho một lệnh cụ thể:
+Mô tả: Lệnh này được sử dụng để tra cứu trang hướng dẫn cho một lệnh cụ thể. Thông tin chi tiết về cách sử dụng lệnh và các tùy chọn liên quan có thể được tìm thấy trong trang hướng dẫn.
+VD:user@bash: man ls
+Giải thích: Đây là một ví dụ khi bạn sử dụng lệnh man ls để xem trang hướng dẫn cho lệnh ls.
+
+7.mkdir [options] <Thư mục> - Tạo một thư mục mới:
+Mô tả: Lệnh này được sử dụng để tạo một thư mục mới với tên được chỉ định.
+Ví dụ:user@bash: mkdir chuyende
+Giải thích: Đây là một ví dụ khi bạn sử dụng lệnh mkdir chuyende để tạo một thư mục mới có tên là "chuyende".
+
+8.rmdir [options] <Thư mục> - Xóa một thư mục:
+Mô tả: Lệnh này được sử dụng để xóa một thư mục trống với tên được chỉ định.
+Ví dụ:user@bash: rmdir chuyende
+Giải thích: Đây là một ví dụ khi bạn sử dụng lệnh rmdir chuyende để xóa thư mục trống có tên "chuyende".
+
+9.touch [options] <tên_tệp> - Tạo một tệp trống:
+Mô tả: Lệnh này được sử dụng để tạo một tệp mới có tên được chỉ định. Nếu tệp đã tồn tại, nó sẽ cập nhật thời gian sửa đổi.
+Ví dụ:user@bash: touch example.txt
+Giải thích: Đây là một ví dụ khi bạn sử dụng lệnh touch example.txt để tạo một tệp trống mới có tên "example.txt".
+
+11.cp [options] <nguồn> <đích> - Sao chép một tệp hoặc thư mục:
+Mô tả: Lệnh này được sử dụng để sao chép một tệp hoặc thư mục từ địa chỉ nguồn đến địa chỉ đích.
+Ví dụ:user@bash: cp source.txt destination/
+Giải thích: Đây là một ví dụ khi bạn sử dụng lệnh cp source.txt destination/ để sao chép tệp "source.txt" vào thư mục "destination".
+
+12.mv [options] <nguồn> <đích> - Di chuyển một tệp hoặc thư mục:
+Mô tả: Lệnh này được sử dụng để di chuyển một tệp hoặc thư mục từ địa chỉ nguồn đến địa chỉ đích. Nó cũng có thể được sử dụng để đổi tên tệp hoặc thư mục.
+Ví dụ:
+user@bash: mv oldfile.txt newfile.txt
+Giải thích: Đây là một ví dụ khi bạn sử dụng lệnh mv oldfile.txt newfile.txt để di chuyển và đổi tên tệp từ "oldfile.txt" thành "newfile.txt".
+
+13.rm [options] <tệp> - Xóa một tệp:
+Mô tả: Lệnh này được sử dụng để xóa một tệp cụ thể khỏi hệ thống.
+Ví dụ:
+user@bash: rm unwanted.txt
+Giải thích: Đây là một ví dụ khi bạn sử dụng lệnh rm unwanted.txt để xóa tệp "unwanted.txt".
+
+14.gedit <tệp> - Mở Trình soạn thảo Văn bản để chỉnh sửa tệp:
+Mô tả: Lệnh này được sử dụng để mở Trình soạn thảo Văn bản (trong trường hợp này là Gedit) để chỉnh sửa một tệp cụ thể.
+Ví dụ:user@bash: gedit example.txt
+Giải thích: Đây là một ví dụ khi bạn sử dụng lệnh gedit example.txt để mở Trình soạn thảo Văn bản và chỉnh sửa tệp "example.txt".
+
+15.chown [option] [path] – Thay đổi chủ sở hữu của một tệp hoặc thư mục:
+Mô tả: Lệnh này được sử dụng để thay đổi chủ sở hữu của một tệp hoặc thư mục trong hệ thống Linux.
+Ví dụ: Để thay đổi chủ sở hữu của /foo và tất cả các tệp con thành "root", bạn có thể chạy:
+user@bash: chown -R root /foo
+Để nhận quyền sửa đổi /var/www/html, bạn có thể chạy:
+bash
+Copy code
+user@bash: sudo chown -R pi:pi /var/www/html
+
+16.passwd – Đổi mật khẩu người dùng:
+Mô tả: Lệnh này được sử dụng để thay đổi mật khẩu của người dùng hiện tại.
+Ví dụ:user@bash: passwd
+
+17.su – Chuyển từ người dùng sang tài khoản root:
+Mô tả: Lệnh này được sử dụng để chuyển từ tài khoản người dùng hiện tại sang tài khoản root (quản trị viên hệ thống).
+Ví dụ:user@bash: su
+
+18.exit – Quay lại tài khoản người dùng:
+Mô tả: Lệnh này được sử dụng để quay lại tài khoản người dùng sau khi đã chuyển sang tài khoản root.
+Ví dụ:root@bash: exit
+
+19.history – Hiển thị tất cả các lệnh trước đó:
+Mô tả: Lệnh này được sử dụng để hiển thị lịch sử của tất cả các lệnh đã được thực thi trước đó.
+Ví dụ:user@bash: history
+
+20.clear – Xóa màn hình terminal:
+Mô tả: Lệnh này được sử dụng để xóa nội dung trên màn hình terminal và làm cho màn hình trở nên sạch sẽ.
+Ví dụ:user@bash: clear
+
+21.df – Hiển thị kích thước, dung lượng đã sử dụng và dung lượng còn trống trên các hệ thống tệp đã gắn kết:
+Mô tả: Lệnh này được sử dụng để hiển thị thông tin về kích thước, dung lượng đã sử dụng và dung lượng còn trống trên các hệ thống tệp đã gắn kết trong hệ thống.
+Ví dụ:user@bash: df -h
+
+22.echo – In một chuỗi hoặc biến chuỗi trên màn hình terminal:
+Mô tả: Lệnh này được sử dụng để in một chuỗi hoặc giá trị của một biến chuỗi lên màn hình terminal.
+Ví dụ:user@bash: echo Hello
+user@bash: echo $PATH
+user@bash: echo $HOME
+
+23.grep – Tìm kiếm các dòng chứa một mẫu tìm kiếm trong các tệp:
+Mô tả: Lệnh này được sử dụng để tìm kiếm các dòng trong các tệp văn bản mà chứa một mẫu tìm kiếm cụ thể.
+Ví dụ:user@bash: grep train *.txt
+Đây là một ví dụ khi bạn sử dụng lệnh grep train *.txt để tìm kiếm tất cả các dòng trong các tệp văn bản có chứa từ khóa "train".
+
+24.Unzip Files in Linux:
+Mô tả: Trong hệ thống Linux, bạn có thể giải nén (unzip) các tệp nén để truy cập nội dung chúng.
+	unzip filename.zip
+
+25.Download file từ web:
+	wget http://website.com/files/file.zip
+
+26.Chi dinh dat ten tep
+	-O filename
+
+

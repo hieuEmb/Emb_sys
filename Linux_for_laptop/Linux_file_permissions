@@ -1,0 +1,20 @@
+Permission: specify what a particular person may or may not do with respect to a file or directory
+
+- : file
+d : folder
+
+permissions
+for the owner
+
+permissions
+for groups
+
+permissions
+for others
+	e.g. (-.rwx.r--.--x)
+	
+• r read - you may view the contents of the file.
+• w write - you may change the contents of the file.
+• x execute - you may execute or run the file if it is a program or script.
+
+chmod [permissions] [path] - change permissions on a file or directory
